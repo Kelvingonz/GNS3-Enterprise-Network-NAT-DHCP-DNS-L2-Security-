@@ -1,3 +1,61 @@
 # Enterprise-Network-Lab-NAT-DHCP-DNS-L2-Security-
 
-<img width="1919" height="864" alt="Topology" src="https://github.com/user-attachments/assets/bb47d21c-8372-4fc1-bcfc-34563b7f39ff" />
+<img width="1665" height="821" alt="Topology" src="https://github.com/user-attachments/assets/cf1608dc-c4a2-4270-96ae-d4756edc388f" />
+
+
+## Overview
+
+This lab simulates a small enterprise network with:
+
+- NAT overload (PAT) for internet access
+- DHCP for multiple VLANs
+- Layer 2 switching
+- DHCP Snooping and Dynamic ARP Inspection (DAI)
+
+## Network Design
+
+### WAN
+
+- Public block: 192.168.1.0/30 (VMware Host's IP address)
+- Edge Router (NAT):
+   - g0/0 = ISP
+   - g1/0 = Internal network
+
+### Internal Networks
+  Network ---- Gateway ---- Purpose
+- 192.168.10.0/24 ---- 192.168.10.254 ---- VLAN 10
+- 192.168.20.0/24 ----	192.168.20.254 ---- VLAN 20
+
+### DHCP
+- Centralized on Distribution Router
+- Excluded Addresses: 192.168.10.254 and 192.168.20.254
+  - Reserved to keep static IP addresses on access switches.
+- Pools:
+   - POOL1: 192.168.1.0/24
+   - POOL2: 192.168.2.0/24
+- DNS: 8.8.8.8
+- Domain: kelvin.lab.local
+
+### NAT
+- Inside: g1/0 <br>
+- Outside: g0/0 <br>
+PAT using access-list: <br>
+access-list 1 permit 192.168.10.0 0.0.0.255 <br>
+access-list 1 permit 192.168.20.0 0.0.0.255 <br>
+- NAT Overload: g0/0
+
+### Layer 2 Security
+- DHCP Snooping enabled
+- Dynamic ARP Inspection enabled
+- Trusted ports configured toward router/uplinks
+
+### Features Implemented
+- Inter-VLAN routing
+- DHCP services
+- NAT overload (PAT)
+- DNS reachability
+- L2 security protections against spoofing
+
+## Author
+
+Kelvin Gonzalez
