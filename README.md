@@ -1,7 +1,6 @@
 # Enterprise Network (NAT + DHCP + L2 Security) via GNS3
 
-<img width="1915" height="972" alt="Topology" src="https://github.com/user-attachments/assets/13071178-ac3c-4d7e-a6e2-10f3d7093eca" />
-
+<img width="1918" height="969" alt="Topology" src="https://github.com/user-attachments/assets/736c9535-3e5d-47e6-af51-525ec1e785b1" />
 
 ## Overview
 
