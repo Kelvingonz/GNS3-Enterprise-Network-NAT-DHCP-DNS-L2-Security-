@@ -21,7 +21,7 @@ This GNS3 project simulates a network with:
 
 ### WAN
 
-- Public block: 192.168.1.0/30 
+- Public block: 192.168.1.0/24
 
 - Edge Router (NAT):
    - g0/0 = ISP (VMnet)
