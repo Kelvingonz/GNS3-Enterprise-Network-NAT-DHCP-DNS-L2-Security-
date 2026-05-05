@@ -1,8 +1,8 @@
-# 3-Tier Architecture Network (NAT + DHCP + DNS + L2 Security)
+# 3-Tier Architecture Network (NAT + DHCP + DNS + ACLs + L2 Security)
 
 <img width="1920" height="902" alt="Topology" src="https://github.com/user-attachments/assets/84b13be9-0c30-46ce-a2f4-b9e8129b3784" />
 <br>
-Simplified collapsed core 3-tier architecture network showcasing NAT, DHCP, DNS, ACLs, switching, routing, and L2 security using GNS3 VM. <br>
+Simplified collapsed core 3-tier architecture network showcasing NAT, DHCP, DNS, ACLs, L3 Routing, L2 switching, and L2 security using GNS3 VM. <br>
 
 ## Overview
 This lab was built using Cisco Virtual IOS L2 (vIOS L2) switch images and Cisco 7200 IOS (C7200-ADVENTERPRISEK9-M) router images.
@@ -67,7 +67,7 @@ permit 192.168.20.0 0.0.0.255 <br>
 - Port Security (Sticky MAC)
    - Enabled on switch ports connected to end-users
    - Maximum MAC addresses allowed on each switch: 2
-   - Violation mode typically set to restrict 
+   - Violation mode set to restrict 
 
 ### Features Implemented
 - DHCP services
