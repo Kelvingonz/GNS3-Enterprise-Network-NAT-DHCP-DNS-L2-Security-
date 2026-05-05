@@ -25,7 +25,7 @@ This GNS3 project simulates a network with:
 
 - Edge Router (NAT):
    - g0/0 = ISP (Network Adapter VMnet0 - Bridged)
-   - g1/0 = Internal network
+   - g1/0 = Point-to-point Link with Distribution Router
 
 ### Internal Networks
   Network ---- Gateway ----
