@@ -32,6 +32,17 @@ This lab was built using Cisco Virtual IOS L2 (vIOS L2) switch images and Cisco 
 - 192.168.10.0/24 ---- 192.168.10.254 ---- 
 - 192.168.20.0/24 ----	192.168.20.254 ---- 
 
+### NAT + ACLs
+- NAT Inside: g1/0 <br>
+- NAT Outside: g0/0 <br>
+
+NAT Overload (PAT) using named ACLs: <br>
+ip access-list standard PAT <br>
+permit 192.168.10.0 0.0.0.255 <br>
+permit 192.168.20.0 0.0.0.255 <br>
+
+- ip nat inside source list PAT interface GigabitEthernet0/0 overload
+
 ### DHCP
 - Centralized on Distribution Router
 - Excluded IP Addresses: 192.168.10.254 and 192.168.20.254
@@ -45,17 +56,6 @@ This lab was built using Cisco Virtual IOS L2 (vIOS L2) switch images and Cisco 
       - DNS: 8.8.8.8
       - Domain: kelvin.lab.local
       - Default Gateway: 192.168.20.254
-
-### NAT + ACLs
-- NAT Inside: g1/0 <br>
-- NAT Outside: g0/0 <br>
-
-NAT Overload (PAT) using named ACLs: <br>
-ip access-list standard PAT <br>
-permit 192.168.10.0 0.0.0.255 <br>
-permit 192.168.20.0 0.0.0.255 <br>
-
-- ip nat inside source list PAT interface GigabitEthernet0/0 overload
 
 ### Layer 2 Security
 - DHCP Snooping enabled
