@@ -37,7 +37,7 @@ This GNS3 project simulates a network with:
 
 ### DHCP
 - Centralized on Distribution Router
-- Excluded Addresses: 192.168.10.254 and 192.168.20.254
+- Excluded IP Addresses: 192.168.10.254 and 192.168.20.254
   - Reserved to keep static IP addresses on access switches.
 - Pools:
    - POOL10: 192.168.10.0/24
