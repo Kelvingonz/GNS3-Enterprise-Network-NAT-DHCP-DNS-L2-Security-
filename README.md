@@ -4,7 +4,7 @@
 
 
 ## Overview
-Simplified collapsed-core 3-tier lab showcasing NAT, DHCP, routing, and L2 security. <br>
+Simplified collapsed core 3-tier lab showcasing NAT, DHCP, routing, and L2 security. <br>
 <br>
 Not production ready, has single points of failure and no redundancy.<br>
 <br>
@@ -36,8 +36,8 @@ This GNS3 project simulates a network with:
 - Excluded Addresses: 192.168.10.254 and 192.168.20.254
   - Reserved to keep static IP addresses on access switches.
 - Pools:
-   - POOL1: 192.168.10.0/24
-   - POOL2: 192.168.20.0/24
+   - POOL10: 192.168.10.0/24
+   - POOL20: 192.168.20.0/24
 - DNS: 8.8.8.8
 - Domain: kelvin.lab.local
 
