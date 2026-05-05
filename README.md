@@ -4,7 +4,7 @@
 
 
 ## Overview
-Simplified collapsed-core 3-tier lab showcasing NAT, DHCP, routing, and L2 security. 
+Simplified collapsed-core 3-tier lab showcasing NAT, DHCP, routing, and L2 security. <br>
 Not production ready, has single points of failure and no redundancy.<br>
 Next steps: add dual devices, FHRP, and link redundancy. <br>
 
