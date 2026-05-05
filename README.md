@@ -5,7 +5,7 @@
 Simplified collapsed core 3-tier lab showcasing NAT, DHCP, routing, and L2 security using GNS3 VM. <br>
 
 ## Overview
-This lab was built using Cisco Virtual IOS L2 (vIOS L2) switch image and Cisco 7200 IOS (C7200-ADVENTERPRISEK9-M) router image.
+This lab was built using Cisco Virtual IOS L2 (vIOS L2) switch images and Cisco 7200 IOS (C7200-ADVENTERPRISEK9-M) router images.
 
 This is a non-production environment used for testing networking protocols, configurations, and security features in a controlled setup.
 <br>
