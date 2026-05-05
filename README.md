@@ -1,4 +1,4 @@
-# GNS3-Network-NAT-DHCP-DNS-L2-Security
+# Enterprise Network (NAT + DHCP + L2 Security) via GNS3
 
 <img width="1915" height="972" alt="Topology" src="https://github.com/user-attachments/assets/13071178-ac3c-4d7e-a6e2-10f3d7093eca" />
 
