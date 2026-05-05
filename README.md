@@ -4,8 +4,11 @@
 
 
 ## Overview
+Simplified collapsed-core 3-tier lab showcasing NAT, DHCP, routing, and L2 security. 
+Not production ready, has single points of failure and no redundancy.<br>
+Next steps: add dual devices, FHRP, and link redundancy. <br>
 
-This GNS3 simulates a small enterprise network with:
+This GNS3 project simulates a network with:
 
 - NAT overload (PAT) for internet access
 - DHCP services for internal subnets
@@ -57,6 +60,8 @@ access-list 1 permit 192.168.20.0 0.0.0.255 <br>
 - NAT overload (PAT)
 - DNS reachability
 - L2 security protections against spoofing and unauthorized rogue device plug-ins
+
+Note: ##
 
 ## Author
 
