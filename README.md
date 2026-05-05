@@ -8,9 +8,9 @@
 This GNS3 simulates a small enterprise network with:
 
 - NAT overload (PAT) for internet access
-- DHCP for multiple subnets
-- Layer 2 switching
-- DHCP Snooping and Dynamic ARP Inspection (DAI)
+- DHCP services for internal subnets
+- Layer 2 switching / Layer 3 routing 
+- DHCP Snooping and Port Security (Sticky MAC)
 
 ## Network Design
 
@@ -46,14 +46,17 @@ access-list 1 permit 192.168.20.0 0.0.0.255 <br>
 
 ### Layer 2 Security
 - DHCP Snooping enabled
-- Dynamic ARP Inspection enabled
-- Trusted ports configured toward router/uplinks
+  - Trusted ports configured toward router/uplinks
+  - Limit rate of 4 DHCP packets per second
+- Port Security (Sticky MAC)
+   - Enabled on switch ports connected to end-users
+   - Violation mode typically set to restrict 
 
 ### Features Implemented
 - DHCP services
 - NAT overload (PAT)
 - DNS reachability
-- L2 security protections against spoofing
+- L2 security protections against spoofing and unauthorized rogue device plug-ins
 
 ## Author
 
