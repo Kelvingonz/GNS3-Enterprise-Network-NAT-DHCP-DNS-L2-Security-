@@ -24,7 +24,7 @@ This GNS3 project simulates a network with:
 - Public block: 192.168.1.0/30 
 
 - Edge Router (NAT):
-   - g0/0 = ISP (VMware Host)
+   - g0/0 = ISP (VMnet)
    - g1/0 = Internal network
 
 ### Internal Networks
