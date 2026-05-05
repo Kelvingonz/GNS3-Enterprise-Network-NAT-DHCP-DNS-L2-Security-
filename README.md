@@ -53,7 +53,7 @@ This GNS3 project simulates a network with:
 - NAT Inside: g1/0 <br>
 - NAT Outside: g0/0 <br>
 
-NAT Overload PAT using access-list: <br>
+NAT Overload (PAT) using named ACLs: <br>
 ip access-list standard PAT <br>
 permit 192.168.10.0 0.0.0.255 <br>
 permit 192.168.20.0 0.0.0.255 <br>
