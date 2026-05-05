@@ -24,7 +24,7 @@ This GNS3 project simulates a network with:
 - Public block: 192.168.1.0/24
 
 - Edge Router (NAT):
-   - g0/0 = ISP (Network Adapter VMnet8)
+   - g0/0 = ISP (Network Adapter VMnet0 - Bridged)
    - g1/0 = Internal network
 
 ### Internal Networks
@@ -63,8 +63,6 @@ access-list 1 permit 192.168.20.0 0.0.0.255 <br>
 - NAT overload (PAT)
 - DNS reachability
 - L2 security protections against spoofing and unauthorized rogue device plug-ins
-
-Note: ##
 
 ## Author
 
