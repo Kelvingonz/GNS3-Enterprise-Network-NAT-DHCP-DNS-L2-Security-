@@ -50,8 +50,8 @@ This GNS3 project simulates a network with:
       - Default Gateway: 192.168.20.254
 
 ### NAT + ACLs
-- Inside: g1/0 <br>
-- Outside: g0/0 <br>
+- NAT Inside: g1/0 <br>
+- NAT Outside: g0/0 <br>
 
 NAT Overload PAT using access-list: <br>
 ip access-list standard PAT <br>
