@@ -2,7 +2,7 @@
 
 <img width="1920" height="902" alt="Topology" src="https://github.com/user-attachments/assets/84b13be9-0c30-46ce-a2f4-b9e8129b3784" />
 <br>
-Simplified collapsed core 3-tier lab showcasing NAT, DHCP, routing, and L2 security using GNS3 VM. <br>
+Simplified collapsed core 3-tier architecture network showcasing NAT, DHCP, routing, and L2 security using GNS3 VM. <br>
 
 ## Overview
 This lab was built using Cisco Virtual IOS L2 (vIOS L2) switch images and Cisco 7200 IOS (C7200-ADVENTERPRISEK9-M) router images.
