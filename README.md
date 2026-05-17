@@ -1,4 +1,4 @@
-# 2-Tier Architecture Network (NAT + DHCP + DNS + ACLs + L2 Security)
+# 2-Tier Enterprise Campus Architecture Network (NAT + DHCP + DNS + ACLs + L2 Security)
 
 <img width="1920" height="902" alt="Topology" src="https://github.com/user-attachments/assets/84b13be9-0c30-46ce-a2f4-b9e8129b3784" />
 <br>
