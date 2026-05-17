@@ -2,7 +2,7 @@
 
 <img width="1920" height="902" alt="Topology" src="https://github.com/user-attachments/assets/84b13be9-0c30-46ce-a2f4-b9e8129b3784" />
 <br>
-Simplified collapsed core 2-tier network featuring NAT, DHCP, DNS, ACLs, L3 Routing, L2 switching, and L2 security via GNS3 VM. <br>
+Simplified 2-tier enterprise campus architecture featuring Access Layer, Distribution Layer, Edge/WAN Layer,NAT, DHCP, DNS, ACLs, L3 Routing, L2 switching, and L2 security via GNS3 VM. <br>
 
 ## Overview
 Limitations: This topology contains single points of failure and lacks redundancy. Future improvements include adding dual devices, FHRP, and link redundancy.
